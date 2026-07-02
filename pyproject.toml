@@ -1,0 +1,19 @@
+[project]
+name = "ed-galaxy-mcp"
+version = "1.0.0"
+description = "Elite Dangerous Galaxy MCP Server — system/body/station data, route planning, INARA + Frontier CAPI tools"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.28.1",
+]
+
+[project.scripts]
+ed-galaxy-mcp = "ed_galaxy_mcp.server:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]

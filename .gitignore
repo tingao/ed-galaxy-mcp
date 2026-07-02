@@ -1,0 +1,27 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# ── Virtual envs ──
+.venv/
+venv/
+
+# ── Env files ──
+.env
+.env.*
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Hermes ──
+config.yaml
