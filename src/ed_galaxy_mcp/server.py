@@ -42,8 +42,8 @@ FRONTIER CAPI tools (needs Frontier OAuth2 token): get_my_profile, get_my_fleet_
 # ---------------------------------------------------------------------------
 
 INARA_API_KEY = os.environ.get("INARA_API_KEY", "")
-INARA_APP_NAME = os.environ.get("INARA_APP_NAME", "ed-galaxy-mcp")
-INARA_APP_VERSION = os.environ.get("INARA_APP_VERSION", "1.0.0")
+INARA_APP_NAME = os.environ.get("INARA_APP_NAME", "E:D Market Connector")
+INARA_APP_VERSION = os.environ.get("INARA_APP_VERSION", "5.12.0")
 FRONTIER_TOKEN = os.environ.get("FRONTIER_TOKEN", "")
 FRONTIER_EMAIL = os.environ.get("FRONTIER_EMAIL", "")
 
