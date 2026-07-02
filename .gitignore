@@ -12,6 +12,7 @@ venv/
 # ── Env files ──
 .env
 .env.*
+data/
 
 # ── IDE ──
 .vscode/

@@ -1,0 +1,14 @@
+services:
+  frontier-auth:
+    build: .
+    container_name: frontier-auth
+    ports:
+      - "18684:18080"
+    volumes:
+      - ./data:/data/tokens
+    environment:
+      - FRONTIER_CLIENT_ID=${FRONTIER_CLIENT_ID}
+      - FRONTIER_REDIRECT_URI=${FRONTIER_REDIRECT_URI:-https://elitemcp.tingao.uk/callback}
+      - PORT=18080
+      - ENV_PATH=/data/tokens/.env
+    restart: unless-stopped
